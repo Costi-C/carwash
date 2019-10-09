@@ -1,0 +1,26 @@
+	.first-row{
+		background: #199CDB;
+		color: white;
+		font-weight: bold;
+		font-size: 15px;
+	}
+
+	.thead{
+		background: #199CDB;
+		color: white
+	}
+
+	.tbody{
+		font-weight: bold;
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+
+	.tdposition{
+		line-height: 31px !important;
+	}
+
+	.tdbutton{
+		font-weight: bold;
+		font-size: 13px;
+	}

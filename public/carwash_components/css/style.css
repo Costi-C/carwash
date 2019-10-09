@@ -1,0 +1,114 @@
+.clearfix:after{
+    font-size: 0px;
+    content: ".";
+    display: block;
+    height: 0px;
+    visibility: hidden;
+    clear: both;
+}
+
+body{
+	background: #EEEEEE;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Arial';
+	font-size: 13px;
+	color: #666;
+}
+
+p{
+	padding: 1em 0;
+	color: #666;
+	line-height: 150%;
+}
+
+a{
+    outline: none;
+    color: #1185D7;
+	font-size: 13px;
+}
+
+a:hover{
+    color: #353C40;
+}
+
+.theme_page{
+	width: 930px;
+	background: #FFFFFF;
+    padding: 30px;
+	margin: 0 auto 0;
+}
+
+.search-order{
+	float: right;
+	display: block;
+	width: auto;	
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	line-height: 1.5;	
+	padding: 5px 20px;
+	margin-top: 3px;	
+	font-size: 16px;
+	font-weight: bold;
+	background-image: url('icon-search.png');
+    background-position: 10px 17px;
+    padding: 12px 20px 12px 40px; 
+    background-repeat: no-repeat;
+	
+}
+
+.search-order:hover, .search-order:focus{
+	background-image: none;	
+	background-color: #199CDB;
+	color: #FFF;
+}
+
+.new-order{
+	border: 1px solid #ddd;
+	margin-top: 25px;
+}
+
+.new-order span{
+	color: #222222;
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #199CDB;
+	padding-right: 20px;
+}
+
+.customer-plate{	
+	width: auto !important;	
+	border-radius: 4px !important;
+	border: 1px solid #ddd !important;
+	-moz-border-radius: 4px !important;
+	-ms-border-radius: 4px !important;
+	-o-border-radius: 4px !important;
+	-webkit-border-radius: 4px !important; 
+	line-height: 1.5 !important;	
+	padding: 5px !important;
+	margin-top: 3px !important;	
+	font-size: 16px !important;
+	font-weight: bold !important;	
+    padding: 12px !important;   
+}
+
+.customer-phone{	
+	width: auto !important;	
+	border-radius: 4px !important;
+	border: 1px solid #ddd !important;
+	-moz-border-radius: 4px !important;
+	-ms-border-radius: 4px !important;
+	-o-border-radius: 4px !important;
+	-webkit-border-radius: 4px !important; 
+	line-height: 1.5 !important;	
+	padding: 5px !important;
+	margin-top: 3px !important;	
+	font-size: 16px !important;
+	font-weight: bold !important;	
+    padding: 12px !important;   
+}

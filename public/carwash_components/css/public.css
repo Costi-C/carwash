@@ -1,0 +1,487 @@
+/******************************************************************************/
+/* Import																	  */
+/******************************************************************************/
+
+@import "icon.css";
+
+/******************************************************************************/
+/* Base																		  */
+/******************************************************************************/
+
+.cbs-list-reset
+{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+
+.cbs-clear-fix:after 
+{
+	height:0;
+	clear:both;
+	content:" ";
+	font-size:0;
+	min-height:0;
+	display:block;
+	visibility:hidden;
+}
+
+* html .cbs-clear-fix				{ zoom: 1; } 
+*:first-child+html .cbs-clear-fix	{ zoom: 1; }
+
+/******************************************************************************/
+/* Default																	  */
+/******************************************************************************/
+
+.cbs-main *
+{
+	font-size:15px;
+	font-weight:400;
+	line-height:150%;
+	font-family:'Lato';
+	box-sizing:border-box;
+}
+
+.cbs-main a
+{
+	outline:none;
+	text-decoration:none;
+}
+
+.cbs-main a:hover
+{
+	text-decoration:underline;
+}
+
+.cbs-state-to-hidden .cbs-state-to-hidden
+{
+	display:none;
+}
+
+.cbs-state-hidden
+{
+	display:none;
+}
+
+/******************************************************************************/
+/* Color																	  */
+/******************************************************************************/
+
+	/**************************************************************************/
+	/* Color / Color 1														  */
+	/**************************************************************************/
+
+	.cbs-main a,
+	.cbs-main .cbs-button,
+	.cbs-main .cbs-booking-summary>li>h5,
+	.cbs-main .cbs-package-list>li>.cbs-package-price
+	{
+		color:#199CDB;
+	}
+
+	.cbs-main .cbs-button:hover,
+	.cbs-main .cbs-state-selected>.cbs-button,
+	.cbs-main .cbs-state-selected>.cbs-button-box>.cbs-button,
+	.cbs-main .cbs-vehicle-list>li:hover,
+	.cbs-main .cbs-vehicle-list>li.cbs-state-selected{
+		background-color:#199CDB;
+	}
+	
+	.cbs-main .cbs-button,
+	.cbs-main .cbs-vehicle-list>li:hover,
+	.cbs-main .cbs-vehicle-list>li.cbs-state-selected{
+		border-color:#199CDB;
+	}
+	
+	/**************************************************************************/
+	/* Color / Color 2														  */
+	/**************************************************************************/
+	
+	.cbs-main .cbs-button:hover,
+	.cbs-main .cbs-state-selected>.cbs-button,
+	.cbs-main .cbs-state-selected>.cbs-button-box>.cbs-button,	
+	.cbs-main .cbs-vehicle-list>li:hover,
+	.cbs-main .cbs-vehicle-list>li:hover .cbs-vehicle-icon,
+	.cbs-main .cbs-vehicle-list>li.cbs-state-selected,
+	.cbs-main .cbs-vehicle-list>li.cbs-state-selected .cbs-vehicle-icon{
+		color:#FFFFFF;
+	}
+	
+	/**************************************************************************/
+	/* Color / Color 3														  */
+	/**************************************************************************/
+	
+	.cbs-main .cbs-service-list>li>.cbs-service-name,
+	.cbs-main .cbs-package-list>li>.cbs-package-name{
+		color:#222222;
+	}
+	
+	/**************************************************************************/
+	/* Color / Color 4														  */
+	/**************************************************************************/
+	
+	.cbs-main .cbs-form .cbs-form-summary .cbs-form-info,
+	.cbs-main .cbs-package-list>li>.cbs-package-service-list>li,	
+	.cbs-main .cbs-service-list>li>div.cbs-service-name .cbs-more-content,	
+	.cbs-main .cbs-form textarea,
+	.cbs-main .cbs-form input[type="text"]
+	{
+		color:#777777;
+	}
+	
+	/**************************************************************************/
+	/* Color / Color 5														  */
+	/**************************************************************************/	
+	
+	.cbs-main .cbs-form label,
+	.cbs-main .cbs-vehicle-list>li,	
+	.cbs-main .cbs-package-list>li>.cbs-package-duration,
+	.cbs-main .cbs-service-list>li>div.cbs-service-price,
+	.cbs-main .cbs-service-list>li>div.cbs-service-duration
+	{
+		color:#A8B1B6;
+	}
+
+	/**************************************************************************/
+	/* Color / Color 6														  */
+	/**************************************************************************/	
+	
+	.cbs-main .cbs-vehicle-list>li,
+	.cbs-main .cbs-package-list>li,
+	.cbs-main .cbs-service-list>li,	
+	.cbs-main .cbs-form .cbs-form-field,
+	.cbs-main .cbs-package-list>li>.cbs-package-duration
+	{
+		border-color:#E2E6E7;
+	}
+	
+	
+	/**************************************************************************/
+	/* Color / Color 10														  */
+	/**************************************************************************/	
+	
+	.cbs-main .cbs-meta-icon,
+	.cbs-main .cbs-vehicle-icon{
+		color:#A8B1B6;
+	}
+	
+/******************************************************************************/
+/* Main																		  */
+/******************************************************************************/
+
+.cbs-main
+{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+
+	/**************************************************************************/
+	/* Main / List															  */
+	/**************************************************************************/
+	
+.cbs-main .cbs-main-list>li.cbs-main-list-item.cbs-main-list-item-vehicle-list{
+	margin-bottom:68px;
+}
+
+.cbs-main .cbs-main-list>li.cbs-main-list-item.cbs-main-list-item-package-list{
+	margin-bottom:50px;
+}
+
+.cbs-main .cbs-main-list>li.cbs-main-list-item>div.cbs-main-list-item-section-content{
+	margin-top:50px;
+}
+
+
+/******************************************************************************/
+/* Button																	  */
+/******************************************************************************/
+.cbs-button{
+	outline:none;
+	line-height:1;
+	cursor:pointer;
+	text-align:left;
+	border-width:2px;
+	position:relative;
+	border-style:solid;
+	border-radius:999px;
+	display:inline-block;
+	padding:13px 30px 15px 30px;
+	background-color:transparent;
+}
+
+a.cbs-button,
+a.cbs-button:hover{
+	text-decoration:none;
+}
+
+.cbs-button,
+.cbs-state-selected .cbs-button:before{
+	transition:padding-right 100ms ease,opacity 200ms ease 100ms;
+}
+	
+.cbs-button:before{
+	opacity:0; 
+	right:25px;
+	position:absolute;
+}
+	
+.cbs-state-selected .cbs-button{
+	padding-right:50px;
+}
+	
+.cbs-state-selected .cbs-button:before{
+	opacity:1;
+}
+
+.cbs-button,
+.cbs-button>*
+{
+	line-height:1;
+}
+	
+/******************************************************************************/
+/* Button																	  */
+/******************************************************************************/
+.cbs-more-link{
+	margin-left:10px;
+}
+			
+/******************************************************************************/
+/* Vehicle List																  */
+/******************************************************************************/
+.cbs-vehicle-list{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	align-items:flex-start;
+	margin:0px -6px -12px -6px;
+}
+
+.cbs-vehicle-list>li{
+	flex-grow:1;
+	flex-basis:140px;
+	height:147px;
+	cursor:pointer;
+	padding-top:40px;	
+	border-width:1px;
+	border-style:solid;
+	text-align:center;
+	margin:0px 6px 12px 6px;
+}
+
+.cbs-vehicle-list>li:only-child{
+	flex-grow:0.1;
+}
+
+.cbs-vehicle-list>li{
+	float:left \9;
+	width:185px \9;
+}
+
+.cbs-vehicle-list>li>div>div{
+	position:relative;
+}
+
+.cbs-vehicle-list>li>div>div{
+	top:3px;
+}
+
+.cbs-vehicle-list>li>div>div+div
+{
+	top:5px;
+}
+		
+/******************************************************************************/
+/* Package List																  */
+/******************************************************************************/
+
+.cbs-package-list{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	align-items:stretch;
+	margin:0px -15px 0px -15px;
+}
+
+.cbs-package-list>li{
+	flex-grow:1;
+	flex-basis:210px;
+	text-align:center;
+	border-width:1px;
+	border-style:solid;
+	position:relative;
+	margin:0px 15px 30px 15px;
+	padding:25px 20px 75px 20px;
+}
+
+.cbs-package-list>li>.cbs-package-name{
+	font-size:24px;
+	margin-top:0px;
+	margin-bottom:20px;
+}
+
+.cbs-package-list>li>.cbs-package-price{
+	margin-bottom:30px;
+}
+
+.cbs-package-list>li>.cbs-package-price>span{
+	line-height:1;
+}
+
+.cbs-package-list>li>.cbs-package-price>span.cbs-package-price-unit{
+	top:0px;
+	font-size:55px;
+	font-weight:bold;
+	position:relative;
+}
+
+.cbs-package-list>li>.cbs-package-price>span.cbs-package-price-currency,
+.cbs-package-list>li>.cbs-package-price>span.cbs-package-price-decimal{
+	top:-27px;
+	font-size:16px;
+	font-weight:400;
+	position:relative;
+}
+
+.cbs-package-list>li>.cbs-package-duration{
+	line-height:1;
+	border-style:solid;
+	margin-bottom:30px;
+	padding:15px 0px 15px 0px;
+	border-width:1px 0px 1px 0px;
+}
+
+.cbs-package-list>li>.cbs-package-service-list
+{
+	margin-bottom:30px;
+}
+
+.cbs-package-list>li>.cbs-package-service-list>li
+{
+	clear:both;
+}
+	
+.cbs-package-list>li>div.cbs-button-box
+{
+	left:0px;
+	width:100%;
+	bottom:30px;
+	text-align:center;
+	position:absolute;
+}
+			
+/******************************************************************************/
+/* Service																	  */
+/******************************************************************************/
+
+.cbs-service-list>li{
+	width:100%;
+	display:table;
+	margin-top:-1px;
+	border-width:1px;
+	border-style:solid;
+	box-sizing:border-box;
+	padding:12px 20px 12px 20px;
+}
+
+.cbs-service-list>li:first-child{
+	margin-top:0px;
+}
+
+.cbs-service-list>li>div{
+	text-align:left;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.cbs-service-list>li>div.cbs-service-name{
+	width:55%;
+}
+		
+.cbs-service-list>li>div.cbs-service-name .cbs-more-content{
+	clear:both;
+	display:none;
+	margin-top:5px;
+	font-size:14px;
+	padding-right:20px;
+}
+
+.cbs-service-list>li>div.cbs-service-duration{
+	width:15%;
+}
+
+.cbs-service-list>li>div.cbs-service-price{
+	width:15%;
+}
+
+.cbs-service-list>li>div.cbs-button-box{
+	width:15%;
+}
+
+.cbs-service-list>li>div.cbs-button-box>.cbs-button{
+	float:right;
+}
+	
+.cbs-main-list-item-service-list .cbs-main-list-item-section-content{
+	text-align:center;
+}
+	
+.cbs-main-list-item-service-list .cbs-main-list-item-section-content .cbs-button-service-more{
+	margin-top:30px;
+}
+	
+
+/******************************************************************************/
+/* Form																		  */
+/******************************************************************************/
+.cbs-form input[type="text"]:focus{
+	outline:none;
+}
+
+.cbs-form input[type="text"]{
+	width:100%;
+	border:none;
+	padding:10px 0px 10px 0px;
+}
+	
+.cbs-form .cbs-form-summary{
+	float:left;
+	width:100%;
+	text-align:center;
+}	
+
+.cbs-form .cbs-form-summary .cbs-button{
+	margin-top:40px;
+}
+	
+
+/******************************************************************************/
+/* Responsive																  */
+/******************************************************************************/
+
+	/**************************************************************************/
+	/* Responsive / 1189													  */
+	/**************************************************************************/
+
+@media screen and (max-width:1189px)
+{
+	.cbs-package-list>li{
+		padding:25px 15px 75px 15px;
+		margin:0px 10px 20px 10px;
+	}
+	
+	.cbs-package-list{
+		margin:0px -10px 0px -10px;
+	}
+	
+
+	.cbs-main .cbs-package-list>li>.cbs-package-name{
+		font-size:20px;
+	}
+
+	.cbs-main .cbs-service-list>li{
+		padding:12px 15px 12px 15px;
+	}	
+}
