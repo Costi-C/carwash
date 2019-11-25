@@ -56,10 +56,4 @@ class LoginController extends Controller
         }
     }
 
-    public function setPass(){
-        $user = User::find(2);
-        $user->password = Hash::make("user");
-        $user->save();
-        return "Password changed";
-    }
 }
