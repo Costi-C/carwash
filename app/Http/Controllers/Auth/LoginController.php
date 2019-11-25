@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use App\User;
 
 class LoginController extends Controller
@@ -29,7 +30,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/admin';    
+    protected $redirectTo = '/';    
 
     /**
      * Create a new controller instance.
@@ -53,5 +54,12 @@ class LoginController extends Controller
                     return redirect()->intended('/');             
             }        
         }
+    }
+
+    public function setPass(){
+        $user = User::find(2);
+        $user->password = Hash::make("user");
+        $user->save();
+        return "Password changed";
     }
 }

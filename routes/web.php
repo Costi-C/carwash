@@ -58,6 +58,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
 
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
+Route::get('login/create', 'Auth\LoginController@setPass');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 // Registration Routes...
